@@ -1,0 +1,16 @@
+:root { --bg: #F5F1E8; --ink: #1C1C1C; --ink2: #55524C; --accent: #C8553D; --line: #DDD6C8; }
+@media (prefers-color-scheme: dark) { :root { --bg: #1A1917; --ink: #EDE8DD; --ink2: #A9A398; --line: #34312C; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.75 -apple-system, "Hiragino Sans", "Noto Sans JP", system-ui, sans-serif; }
+main { max-width: 680px; margin: 0 auto; padding: 48px 16px 80px; }
+header { display: flex; align-items: center; gap: 14px; margin-bottom: 8px; }
+header img { width: 56px; height: 56px; border-radius: 13px; }
+header a { color: inherit; text-decoration: none; font-weight: 700; font-size: 22px; }
+nav { display: flex; gap: 18px; margin: 8px 0 32px; font-size: 14px; flex-wrap: wrap; }
+nav a, a { color: var(--accent); }
+h1 { font-size: 26px; line-height: 1.4; margin: 0 0 8px; }
+h2 { font-size: 18px; margin: 36px 0 8px; }
+p, li { color: var(--ink); }
+.muted { color: var(--ink2); font-size: 14px; }
+hr { border: 0; border-top: 1px solid var(--line); margin: 48px 0; }
+.lang { font-size: 13px; letter-spacing: .08em; color: var(--ink2); text-transform: uppercase; }
